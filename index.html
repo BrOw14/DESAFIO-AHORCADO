@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Juego del ahorcado</title>
+</head>
+<body>
+    <header>
+        <h1>JUEGO DEL AHORCADO</h1>
+    </header>
+    <main>
+        <section id="containerInicio" class="container-inicio">
+            <div class="botones-inicio">
+                <button id="iniciar">Iniciar Partida</button>
+                <button id="agregarPalabra">Agregar Palabra</button>
+            </div>
+        </section>
+        <section id="containerPalabra">
+            <div class="container-palabra">
+                <h2>Agregar una nueva palabra</h2>
+                <textarea id="nuevaPalabra" cols="40" rows="5"></textarea>
+                <button id="agregarALista">Agregar palabra</button>
+                <button id="cancelar">Cancelar</button>
+            </div>
+        </section>
+        <div>
+            <span id="finGanador">Ganaste!! Fin del juego!</span>
+            <span id="finPerdedor">Perdiste!! Fin del juego!</span>
+        </div>
+        <section class="container-juego" id="containerJuego">
+            <div class="dibujo">
+                <canvas id="horca" width="200" height="200"></canvas>
+                <div id="errores">
+                </div>
+            </div>
+            <div class="cuadro-palabra">
+                <div id="letras">
+                    <span id="guiones"></span>
+                </div>
+            </div>
+        </section>
+        <section id="secTeclado">
+            <div id="teclado">
+                <div id="letras1"></div>
+            </div>
+        </section>
+        <section id="botonesJuego">
+            <div class="botones-juego">
+                <button id="nuevoJuego">Nuevo Juego</button>
+                <button id="desistir">Desistir</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
