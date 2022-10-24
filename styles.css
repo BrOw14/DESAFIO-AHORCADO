@@ -3,15 +3,16 @@ body {
     -youbkit-user-select: none;   
     -moz-user-select: none;    
     -ms-user-select: none;        
-    user-select: none;       
-} 
-
-main {
-    background: linear-gradient(#888888, #FEFEFE); 
+    user-select: none;    
+    background: azure
 }
 
 header h1 {
     text-align: center;
+}
+
+.boton {
+    background-color: #FEFEFE;
 }
 
 #horca {
@@ -28,6 +29,7 @@ header h1 {
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .botones-inicio button {
@@ -99,10 +101,10 @@ header h1 {
 
 .caja {
     display: inline;
-    margin: 1em;
+    margin: .5em;
     width: 20px;
     border-bottom: 2px solid black;
-    font-size: 1.5em;
+    font-size: .5em;
 }
 
 #letras {
@@ -153,7 +155,7 @@ header h1 {
 
 .mostrar {
     display: block;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .hidden {
@@ -241,6 +243,16 @@ header h1 {
 }
 
 @media screen and (max-width:480px) {
+    .botones-inicio {
+        width: 80%;
+        height: 40vh;
+        justify-content: space-around;
+    }
+
+    .botones-inicio button {
+        margin: 0;
+    }
+
     .botones-juego{
         flex-wrap: wrap;
     }

@@ -35,7 +35,7 @@ function dibujarBase() {
     document.querySelector('#containerInicio').style.display = 'none';
     document.querySelector('#containerJuego').style.display = 'block';
     document.querySelector('#botonesJuego').style.display = 'block';
-    pincel.fillStyle = 'white';
+    pincel.fillStyle = 'azure';
     pincel.fillRect(0,0,200,200);
     pincel.fillStyle = 'black';
     pincel.beginPath();
