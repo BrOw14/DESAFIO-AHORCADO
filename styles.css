@@ -101,10 +101,10 @@ header h1 {
 
 .caja {
     display: inline;
-    margin: .5em;
+    margin: 1em;
     width: 20px;
     border-bottom: 2px solid black;
-    font-size: .5em;
+    font-size: 2em;
 }
 
 #letras {
@@ -155,7 +155,6 @@ header h1 {
 
 .mostrar {
     display: block;
-    font-size: 1.5em;
 }
 
 .hidden {
@@ -259,6 +258,7 @@ header h1 {
 
     .botones-juego button {
         width: 100%;
+        font-size: max(1.3vw, 20px)
     }
 
     .cuadro-palabra {
@@ -278,6 +278,19 @@ header h1 {
     #letras1 span {
         padding: 10px;
         margin: 1px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .botones-inicio {
+        width: 80%;
+        height: 40vh;
+        justify-content: space-around;
+    }
+
+    .caja {
+        margin: .5em;
+        font-size: 1.5em;
     }
 }
 
